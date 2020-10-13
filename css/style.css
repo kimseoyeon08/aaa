@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/*reset*/
+*{padding: 0; margin: 0;}
+li {list-style: none;}
+
+/* layout */
+body {font-family: 'Noto Sans KR', sans-serif;}
+.wrap{ width: 100%;}
+.content { width: 1280px; background: #ccc; margin: 50px auto;} 
+.content h2{ font-size: 38px; padding: 40px 30px;}
+.content ul { width: 95%; margin: 0 auto; overflow: hidden;;}
+.content ul li { float: left; width: 32%; margin-right: 2%;}
+.content ul li:nth-child(3) { margin-right: 0;}
+.content ul li .imgbox { 
+    width: 100%; height: 300px;
+    background: url(../img/girl.jpeg) no-repeat center/cover; padding: 30px;
+    box-sizing: border-box; color: #fff; margin-bottom: 30px;}
+    .content ul li:nth-child(2) .imgbox { 
+        background: url(../img/moon.jpg) no-repeat center/cover;}
+    .content ul li:nth-child(3) .imgbox { 
+            background: url(../img/purple.jpg) no-repeat center/cover;}
+.content ul li .imgbox > p { font-size: 14px; margin-bottom: 15px;}
+.content ul li .imgbox .slogan { font-size: 24px; font-weight: 500; line-height: 1.2;}
+.content ul li > span { font-size: 14px; font-weight: bold; 
+                      color: teal; margin-bottom: 20px; display: block;}
+/* span은인라인속성이므로 margin이 적용되지 않아서 block속성으로 
+변경해줘야 margin이 적용됨*/  
+.content ul li .tit { font-size: 24px; 
+                      line-height: 1.2;margin-bottom: 40px;} 
+.content ul li .tit .sub { font-size: 15px;}           
